@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title Пользователи
+    link(rel="stylesheet", href="/public/styles.css")
+  body
+    h1 Список пользователей
+
+    a(href="/users/create") Создать пользователя
+
+    if users.length > 0
+      ul
+        each user in users
+          li
+            p Имя: #{user.name}
+            p Email: #{user.email}
+            p ID: #{user.id}
+    else
+      p Пользователей нет
+      

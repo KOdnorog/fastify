@@ -1,0 +1,16 @@
+{
+  "name": "fastify-users",
+  "version": "1.0.0",
+  "description": "Сервер на Fastify со списком пользователей",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "fastify": "^5.6.1",
+    "@fastify/static": "^8.3.0",
+    "@fastify/view": "^10.0.1",
+    "@fastify/formbody": "^8.0.2",
+    "pug": "^3.0.3"
+  }
+}
