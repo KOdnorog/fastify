@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title Редактирование пользователя
+    link(rel="stylesheet", href="/public/styles.css")
+  body
+    h1 Редактировать пользователя
+
+    form(action=`/users/${user.id}/edit` method="POST")
+      p Имя:
+      input(type="text" name="name" value=user.name required)
+
+      p Email:
+      input(type="email" name="email" value=user.email required)
+
+      br
+
+      button(type="submit") Сохранить
+
+    br
+    a(href="/users") Назад к списку
+    

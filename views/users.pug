@@ -16,6 +16,9 @@ html
             p Имя: #{user.name}
             p Email: #{user.email}
             p ID: #{user.id}
+            a(href=`/users/${user.id}/edit`) Редактировать
+            form(action=`/users/${user.id}/delete` method="POST")
+              button(type="submit") Удалить
     else
       p Пользователей нет
       
